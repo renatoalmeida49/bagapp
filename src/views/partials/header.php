@@ -9,17 +9,12 @@
 
     <body>
 
-    <header>
-        <div class="container">
-            <div class="search">
-                <a href="#">
-                    <img src="<?= $base; ?>/assets/images/search.png" />
-                </a>
-            </div>
-            <div class="cart">
-                <a href="#">
-                    <img src="<?= $base; ?>/assets/images/cart.png" />
-                </a>
-            </div>
-        </div>
+    <header class="fixed-top">
+        <a href="#" class="search">
+            <img src="<?= $base; ?>/assets/images/search.png" />
+        </a>
+    
+        <a href="#" class="cart">
+            <img src="<?= $base; ?>/assets/images/cart.png" />
+        </a>
     </header>

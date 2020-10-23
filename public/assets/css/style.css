@@ -1,59 +1,76 @@
-body {
-    padding: 10px;
-}
-
 /* HEADER CSS */
 
 header {
+    display: flex;
     background-color: #FFCCCC;
-    height: 126pt;
-    position: relative;
-}
-
-
-header .container {
-    display: flex;
-    height: inherit;
     justify-content: space-between;
+    padding: 10px;
 }
 
-.container div {
-    display: flex;
+header a {
+    width: auto;
 }
 
 header img {
-    width: 25%;
-    height: inherit;
+    max-width: 40px;
+}
+
+/* CAROUSEL CSS */
+#myCarousel {
+    margin-top: 60px;
 }
 
 .carousel-item img {
     width: 100%;
 }
 
+/* STYLES-MENU CSS */
+
+.row {
+    flex-direction: row;
+}
+
 /* FOOTER CSS */
 
 footer {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-
     background-color: #FFCCCC;
-    height: 126pt;
-
-    position: fixed;
-    z-index: 100;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-footer div {
-    display: flex;
-    justify-content: center;
+footer a {
+    width: auto;
 }
 
 footer img {
+    max-width: 40px;
+}
+
+/* FREIGHT LINE */
+
+.freight {
     display: flex;
-    height: inherit;
-    max-width: 25%;
+    background-color: #FFCCCC;
+    justify-content: space-between;
+}
+
+.freight img {
+    max-width: 40px;
+}
+
+.freight .col-2 {
+    width: auto;
+
+}
+
+/* GENERAL */
+
+.row {
+    margin-left: 0px;
+}
+
+.col-3 {
+    padding-right: 7px;
+    padding-left: 7px;
 }

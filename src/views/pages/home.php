@@ -5,13 +5,6 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="" src="<?=$base; ?>/media/cover.jpg" alt="First slide">
-            <div class="container">
-                <div class="carousel-caption text-center">
-                    <h1>Manutenção de computadores</h1>
-                    <p>Serviços de manutenção em desktops e notebooks</p>
-                    
-                </div>
-            </div>
         </div>
 
         
@@ -32,22 +25,28 @@
 </div>
 
 <div class="row">
-    <div class="col-sm-3">
-        <img class="rounded-circle" src="<?=$base; ?>/media/style-sport.jpg" width="170" height="170"/>
-        <h2>esportiva</h2>
+    <div class="col-3">
+        <img class="rounded-circle" src="<?=$base; ?>/media/style-sport.jpg" width="75" height="75"/>
+        <h5>esportiva</h5>
     </div>
-    <div class="col-sm-3">
-        <img class="rounded-circle" src="<?=$base; ?>/media/style-daily.jpg" width="170" height="170"/>
-        <h2>dia a dia</h2>
+    <div class="col-3">
+        <img class="rounded-circle" src="<?=$base; ?>/media/style-daily.jpg" width="75" height="75"/>
+        <h5>dia a dia</h5>
     </div>
-    <div class="col-sm-3">
-        <img class="rounded-circle" src="<?=$base; ?>/media/style-social.jpg" width="170" height="170"/>
-        <h2>social</h2>
+    <div class="col-3">
+        <img class="rounded-circle" src="<?=$base; ?>/media/style-social.jpg" width="75" height="75"/>
+        <h5>social</h5>
     </div>
-    <div class="col-sm-3">
-        <img class="rounded-circle" src="<?=$base; ?>/media/style-classy.jpg" width="170" height="170"/>
-        <h2>estilosa</h2>
+    <div class="col-3">
+        <img class="rounded-circle" src="<?=$base; ?>/media/style-classy.jpg" width="75" height="75"/>
+        <h5>estilosa</h5>
     </div>
+</div>
+
+<div class="row freight">
+    <div class="col-2"><img src="<?=$base;?>/assets/images/delivery.png" /></div>
+    <div class="col-8">o frete é por nossa conta</div>
+    <div class="col-2"><img src="<?=$base;?>/assets/images/delivery.png" /></div>
 </div>
 
 <?= $render("footer"); ?>
