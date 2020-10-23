@@ -1,0 +1,59 @@
+body {
+    padding: 10px;
+}
+
+/* HEADER CSS */
+
+header {
+    background-color: #FFCCCC;
+    height: 126pt;
+    position: relative;
+}
+
+
+header .container {
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.container div {
+    display: flex;
+}
+
+header img {
+    width: 25%;
+    height: inherit;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+/* FOOTER CSS */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    background-color: #FFCCCC;
+    height: 126pt;
+
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    display: flex;
+    height: inherit;
+    max-width: 25%;
+}
