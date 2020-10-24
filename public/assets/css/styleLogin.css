@@ -1,6 +1,68 @@
+html, body {
+    height: 100%;
+}
+
 header {
     display: flex;
     background-color: #FFCCCC;
     justify-content: center;
     padding: 10px;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: white;
+}
+
+/* FORM CSS */
+form {
+    justify-content: center;
+}
+
+form img {
+    width: 50%;
+
+}
+
+.form-singin {
+	width: 100%;
+	max-width: 330px;
+	margin: auto;
+	padding: 15px;
+	font-size: 16px;
+	background-color: white;
+	border-radius: 25px;
+}
+
+.btn-DANGER {
+    border-radius: 20px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+.h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER CSS */
+
+footer {
+    display: flex;
+    background-color: #FFCCCC;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer a {
+    width: auto;
+}
+
+footer img {
+    max-width: 40px;
 }

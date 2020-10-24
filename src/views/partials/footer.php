@@ -1,5 +1,5 @@
     <footer class="fixed-bottom">
-      <a href="#">
+      <a href="<?=$base; ?>">
         <img src="<?=$base;?>/assets/images/home.png" />
       </a>
 
@@ -11,7 +11,7 @@
         <img src="<?=$base;?>/assets/images/options.png" />
       </a>
 
-      <a href="#">
+      <a href="<?=$base;?>/login">
         <img src="<?=$base;?>/assets/images/user-profile.png" />
       </a>
     </footer>
