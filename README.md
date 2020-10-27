@@ -1,4 +1,4 @@
-# bagapp
+# handbagapp
 
 An app to sell bags. The choose of the product was based on demand of the designer.
 
