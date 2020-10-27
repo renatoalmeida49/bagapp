@@ -17,7 +17,7 @@ class LoginController extends Controller {
         if ($this->loggedUser === false) {
             $this->render('login');
         } else {
-            $this->render('settings');
+            $this->render('settings', ['name' => $this->loggedUser->name]);
         }
     }
 
@@ -25,7 +25,20 @@ class LoginController extends Controller {
         $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
         $password = filter_input(INPUT_POST, 'password');
 
-        echo $email.' '.$password;
+        if($email && $password) {
+            $token = UserHandler::verifyLogin($email, $password);
+
+            if($token) {
+                $_SESSION['token'] = $token;
+                $this->redirect('/');
+            } else {
+                $_SESSION['flash'] = 'E-mail e/ou senha não conferem';
+                $this->redirect('/login');
+            }
+        } else {
+            $_SESSION['flash'] = 'Algo errado com login o senha';
+            $this->redirect('/login');
+        }
     }
 
     public function singUp() {
@@ -34,6 +47,24 @@ class LoginController extends Controller {
         $password = filter_input(INPUT_POST, 'passwordSingUp');
         $repeatPassword = filter_input(INPUT_POST, 'repeatPassword');
 
-        echo $name.' '.$email.' '.$password.' '.$repeatPassword;
+        if($password == $repeatPassword) {
+            if(UserHandler::emailExists($email) == false) {
+                $token = UserHandler::insertUser($name, $email, $password);
+
+                $_SESSION['token'] = $token;
+                $this->redirect('/');
+            } else {
+                $_SESSION['flash'] = 'E-mail já cadastrado';
+                $this->redirect('/login');
+            }
+        } else {
+            $_SESSION['flash'] = "Senhas digitadas não conferem";
+            $this->redirect('/login');
+        }
+    }
+
+    public function logout() {
+        $_SESSION['token'] = '';
+        $this->redirect('/');
     }
 }

@@ -5,7 +5,7 @@
         <link rel="icon" type="image/png" />
         <link rel="stylesheet" href="<?=$base;?>/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="<?=$base;?>/assets/css/styleLogin.css" />
-        <title>BagApp</title>
+        <title>HandbagApp</title>
     </head>
 
     <body class="text-center">
@@ -21,7 +21,7 @@
     <form class="form-singin" method="POST" action="<?=$base;?>/login">
         <img src="<?=$base;?>/assets/images/user-profile.png" class="mb-4"/>
         <?php if(!empty($flash)): ?>
-            <div class="flash"><?php echo $flash; ?></div>
+            <div class="flash"><?=$flash;?></div>
         <?php endif; ?>
         <label for="email" class="sr-only">E-mail</label>
         <input autofocus required id="email" class="form-control" type="email" name="email" placeholder="informe seu e-mail" />

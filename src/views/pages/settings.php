@@ -13,7 +13,7 @@
     <header class="fixed-top">
         <div class="row">
             <div class="col-auto">
-                <strong>Bem vindo, <?= $_SESSION['name']; ?></strong>
+                <strong>Bem vindo, <?= $name; ?></strong>
             </div>
         </div>
     </header>

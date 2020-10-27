@@ -5,7 +5,7 @@
         <link rel="icon" type="image/png" />
         <link rel="stylesheet" href="<?=$base;?>/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="<?=$base;?>/assets/css/styleCategory.css" />
-        <title>BagApp</title>
+        <title>HandbagApp</title>
     </head>
 
     <body class="text-center">

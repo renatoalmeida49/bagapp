@@ -10,3 +10,5 @@ $router->post('/login', 'LoginController@singIn');
 $router->post('/login/singUp', 'LoginController@singUp');
 
 $router->get('/search', 'SearchController@index');
+
+$router->get('/logoff', 'LoginController@logout');
