@@ -23,8 +23,8 @@
         <?php if(!empty($flash)): ?>
             <div class="flash"><?php echo $flash; ?></div>
         <?php endif; ?>
-        <label for="login" class="sr-only">Login</label>
-        <input autofocus required id="login" class="form-control" type="text" name="login" placeholder="informe seu e-mail" />
+        <label for="email" class="sr-only">E-mail</label>
+        <input autofocus required id="email" class="form-control" type="email" name="email" placeholder="informe seu e-mail" />
         <label for="password" class="sr-only">Senha</label>
         <input required id="password" class="form-control" type="password" size="32" name="password" placeholder="informe sua senha" />
 

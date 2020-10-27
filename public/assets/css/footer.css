@@ -1,0 +1,16 @@
+/* FOOTER CSS */
+
+footer {
+    display: flex;
+    background-color: #FFCCCC;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer a {
+    width: auto;
+}
+
+footer img {
+    max-width: 40px;
+}

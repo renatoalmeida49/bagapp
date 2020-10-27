@@ -7,8 +7,8 @@
         <img src="<?=$base;?>/assets/images/favorite-list.png" />
       </a>
 
-      <a href="#">
-        <img src="<?=$base;?>/assets/images/options.png" />
+      <a href="<?=$base; ?>/search">
+        <img src="<?=$base;?>/assets/images/category.png" />
       </a>
 
       <a href="<?=$base;?>/login">

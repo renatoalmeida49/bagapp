@@ -1,3 +1,5 @@
+@import 'footer.css';
+
 /* HEADER CSS */
 
 header {
@@ -28,23 +30,6 @@ header img {
 
 .row {
     flex-direction: row;
-}
-
-/* FOOTER CSS */
-
-footer {
-    display: flex;
-    background-color: #FFCCCC;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-footer a {
-    width: auto;
-}
-
-footer img {
-    max-width: 40px;
 }
 
 /* FREIGHT LINE */
