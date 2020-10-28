@@ -1,22 +1,4 @@
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="icon" type="image/png" />
-        <link rel="stylesheet" href="<?=$base;?>/assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="<?=$base;?>/assets/css/styleLogin.css" />
-        <title>HandbagApp</title>
-    </head>
-
-    <body class="text-center">
-
-    <header class="fixed-top">
-        <div class="row">
-            <div class="col-auto">
-                <strong>ENTRE OU CADASTRE-SE</strong>
-            </div>
-        </div>
-    </header>
+<?= $render('simple-header', ['css' => 'styleLogin', 'title' => 'ENTRE OU CADASTRE-SE']); ?>
 
     <form class="form-singin" method="POST" action="<?=$base;?>/login">
         <img src="<?=$base;?>/assets/images/user-profile.png" class="mb-4"/>

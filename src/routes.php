@@ -11,4 +11,7 @@ $router->post('/login/singUp', 'LoginController@singUp');
 
 $router->get('/search', 'SearchController@index');
 
+$router->post('/insert', 'HandbagController@insertAction');
+$router->get('/handbags/insert', 'HandbagController@insert');
+
 $router->get('/logoff', 'LoginController@logout');
