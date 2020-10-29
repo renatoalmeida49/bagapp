@@ -70,7 +70,7 @@ class HandbagController extends Controller {
 
         $fileName = md5(time().rand(0,9999)).'.jpg';
 
-        imagejpeg($finalImage, $folder.'/'.$fileName);
+        imagejpeg($finalImage, $folder.'/'.$fileName, 80);
 
         return $fileName;
     }
