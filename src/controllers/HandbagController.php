@@ -52,15 +52,7 @@ class HandbagController extends Controller {
 
         $finalImage = imagecreatetruecolor($widthOrig, $heightOrig);
 
-        switch($photo['type']) {
-            case 'image/jpg':
-            case 'image/jpeg':
-                $image = imagecreatefromjpeg($photo['tmp_name']);
-            break;
-            case 'image/png':
-                $image = imagecreatefrompng($photo['tmp_name']);
-            break;
-        }
+        $image = imagecreatefrompng($photo['tmp_name']);
 
         imagecopyresampled(
             $finalImage, $image,
@@ -68,10 +60,18 @@ class HandbagController extends Controller {
             $widthOrig, $heightOrig, $widthOrig, $heightOrig
         );
 
-        $fileName = md5(time().rand(0,9999)).'.jpg';
+        $fileName = md5(time().rand(0,9999)).'.png';
 
-        imagejpeg($finalImage, $folder.'/'.$fileName, 80);
+        imagepng($finalImage, $folder.'/'.$fileName);
 
         return $fileName;
+    }
+
+    public function product($atts = []) {
+        $id = $atts['id'];
+
+        $handbag = HandbagHandler::selectById($id);
+
+        $this->render('handbag', ['handbag' => $handbag]);
     }
 }

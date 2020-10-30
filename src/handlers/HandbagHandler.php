@@ -37,4 +37,43 @@ class HandbagHandler {
             'rate' => $rate
         ])->execute();
     }
+
+    public static function getAllHandbags(){
+        $allBags = [];
+
+        $bags = Handbag::select()->get();
+
+        if($bags) {
+            foreach($bags as $bag) {
+                $newBag = new Handbag();
+
+                $newBag->id = $bag['id'];
+                $newBag->name = $bag['name'];
+                $newBag->price = $bag['price'];
+                $newBag->photo = $bag['photo'];
+                $newBag->rate = $bag['rate'];
+
+                $allBags[] = $newBag;
+            }
+        }
+
+        return $allBags;
+    }
+
+    public function selectById($id) {
+        $handbag = new Handbag();
+
+        $select = Handbag::select()->where('id', $id)->one();
+
+        if(count($select) > 0) {
+            $handbag->id = $select['id'];
+            $handbag->name = $select['name'];
+            $handbag->rate = $select['rate'];
+            $handbag->photo = $select['photo'];
+            $handbag->price = $select['price'];
+            $handbag->category = $select['category'];
+        }
+
+        return $handbag;
+    }
 }

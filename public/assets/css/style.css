@@ -72,6 +72,11 @@ header img {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.feed a {
+    color: black;
+    text-decoration: none;
+}
+
 .item img {
     width: 50%;
 }

@@ -1,0 +1,42 @@
+@import 'footer.css';
+
+html, body {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    background-color: #FFCCCC;
+    justify-content: center;
+    padding: 10px;
+}
+
+body {
+	display: flex;
+    align-items: center;
+    
+	padding-top: 40px;
+	padding-bottom: 40px;
+    background-color: white;
+
+
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* DETAILS */
+
+.row-product {
+    border-bottom: 3px solid black;
+    width: 100%;
+}
+
+.row-product img {
+    width: 100%
+}
+
+button {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+}

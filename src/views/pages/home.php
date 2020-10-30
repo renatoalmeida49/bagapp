@@ -51,29 +51,21 @@
 
 <div class="row feed">
     <div class="col">
-        <div class="item">
-            <div class="head-item"><img src="<?=$base;?>/media/3c88936dea8e237a73d86dda87307792.jpg"></div>
-            <div class="body-item">Bolsa amarela</div>
-            <div class="footer-item">R$ 666,00</div>
-        </div>
 
-        <div class="item">
-            <div class="head-item"><img src="<?=$base;?>/media/6ace6393b2454f0327f1ae0a620483cb.jpg"></div>
-            <div class="body-item">Bolsa vermelha</div>
-            <div class="footer-item">R$ 450,00</div>
-        </div>
+        <?php foreach($handbags as $bag): ?>
 
-        <div class="item">
-            <div class="head-item"><img src="<?=$base;?>/media/45cb8ce0cda2d6b89ff9a650ef749f71.jpg"></div>
-            <div class="body-item">Bolsa azul</div>
-            <div class="footer-item">R$ 56,00</div>
-        </div>
+            <a href="<?=$base;?>/handbag/<?=$bag->id;?>">
 
-        <div class="item">
-            <div class="head-item"><img src="<?=$base;?>/media/46d9ca9236850d32eaeb71b8b77011b9.jpg"></div>
-            <div class="body-item">Bolsa verde</div>
-            <div class="footer-item">R$ 1,00</div>
-        </div>
+            <div class="item">
+                <div class="head-item"><img src="<?=$base;?>/media/<?=$bag->photo;?>"></div>
+                <div class="body-item"><?=$bag->name;?></div>
+                <div class="footer-item"><?=$bag->price;?></div>
+            </div>
+
+            </a>
+
+        <?php endforeach; ?>
+        
     </div>
 </div>
 

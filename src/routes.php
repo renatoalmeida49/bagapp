@@ -14,4 +14,6 @@ $router->get('/search', 'SearchController@index');
 $router->post('/insert', 'HandbagController@insertAction');
 $router->get('/handbags/insert', 'HandbagController@insert');
 
+$router->get('/handbag/{id}', 'HandbagController@product');
+
 $router->get('/logoff', 'LoginController@logout');
