@@ -60,3 +60,18 @@ header img {
     padding-right: 7px;
     padding-left: 7px;
 }
+
+/* FEED */
+
+.feed {
+    display: grid;
+}
+
+.feed .col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item img {
+    width: 50%;
+}
