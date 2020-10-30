@@ -8,7 +8,7 @@ use src\handlers\HandbagHandler;
 class HandbagController extends Controller {
     private $loggedUser;
 
-    public function __construct() {
+    private function verifyLogin() {
         $this->loggedUser = UserHandler::checkLogin();
 
         if($this->loggedUser === false) {
@@ -17,6 +17,8 @@ class HandbagController extends Controller {
     }
 
     public function insert() {
+        $this->verifyLogin();
+
         $flash = '';
 
         if(!empty($_SESSION['flash'])) {
@@ -28,6 +30,8 @@ class HandbagController extends Controller {
     }
 
     public function insertAction() {
+        $this->verifyLogin();
+        
         $name = filter_input(INPUT_POST, 'name');
         $price = filter_input(INPUT_POST, 'price');
         $rate = filter_input(INPUT_POST, 'rate');

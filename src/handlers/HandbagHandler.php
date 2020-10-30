@@ -8,6 +8,30 @@ class HandbagHandler {
         $bags = [];
 
         $data = Handbag::select()
+            ->where('category', 'like', '%'.$q.'%')
+        ->get();
+
+        if($data) {
+            foreach($data as $bag) {
+                $newBag = new Handbag();
+
+                $newBag->id = $bag['id'];
+                $newBag->name = $bag['name'];
+                $newBag->price = $bag['price'];
+                $newBag->photo = $bag['photo'];
+                $newBag->rate = $bag['rate'];
+
+                $bags[] = $newBag;
+            }
+        }
+
+        $bags = self::searchByName($bags, $q);
+
+        return $bags;
+    }
+
+    private static function searchByName($bags, $q) {
+        $data = Handbag::select()
             ->where('name', 'like', '%'.$q.'%')
         ->get();
 
@@ -26,7 +50,7 @@ class HandbagHandler {
         }
 
         return $bags;
-    }
+    }    
 
     public static function insertHandbag($name, $price, $rate, $category, $photoName) {
         Handbag::insert([

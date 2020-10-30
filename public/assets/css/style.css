@@ -80,3 +80,9 @@ header img {
 .item img {
     width: 50%;
 }
+
+/* SEARCH */
+
+.search-feed {
+    margin-top: 65px;
+}
