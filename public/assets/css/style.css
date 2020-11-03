@@ -7,6 +7,13 @@ header {
     background-color: #FFCCCC;
     justify-content: space-between;
     padding: 10px;
+    align-items: center;
+
+    height: 40px;
+}
+
+.error {
+    margin-top: 35px;
 }
 
 header a {
@@ -14,12 +21,38 @@ header a {
 }
 
 header img {
-    max-width: 40px;
+    max-width: 30px;
+}
+
+header input {
+
+    background-color:#FFCCCC;
+    background-image: url('../images/search.png');
+    background-size: 20px;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    width:200px;
+    height:30px;
+    border-radius:15px;
+    border:0;
+    outline:0;
+    padding-left:30px;
+    transition: all .3s;
+}
+
+header form {
+    padding-top: 15px;
+}
+
+header input:focus {
+    width:250px;
+    background-color: #ffefef;
 }
 
 /* CAROUSEL CSS */
 #myCarousel {
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
 .carousel-item img {
@@ -59,6 +92,13 @@ header img {
 .col-3 {
     padding-right: 7px;
     padding-left: 7px;
+}
+
+/* ROW CATEGORY */
+
+.row .col-3 a {
+    color: black;
+    text-decoration: none;
 }
 
 /* FEED */

@@ -11,13 +11,9 @@
     <body>
 
     <header class="fixed-top">
-        <!--<form method="GET" action="<?=$base;?>/search">
+        <form method="GET" action="<?=$base;?>/search">
             <input type="search" placeholder="Pesquisar" name="q" />
-        </form>-->
-
-        <a href="#" class="search">
-            <img src="<?= $base; ?>/assets/images/search.png" />
-        </a>
+        </form>
     
         <a href="#" class="cart">
             <img src="<?= $base; ?>/assets/images/cart.png" />

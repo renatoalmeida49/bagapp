@@ -26,20 +26,28 @@
 
 <div class="row">
     <div class="col-3">
-        <img class="rounded-circle" src="<?=$base; ?>/media/style-sport.jpg" width="75" height="75"/>
-        <h5>esportiva</h5>
+        <a href="<?=$base;?>/search?q=sport">
+            <img class="rounded-circle" src="<?=$base; ?>/media/style-sport.jpg" width="75" height="75"/>
+            <h5>esportiva</h5>
+        </a>
     </div>
     <div class="col-3">
-        <img class="rounded-circle" src="<?=$base; ?>/media/style-daily.jpg" width="75" height="75"/>
-        <h5>dia a dia</h5>
+        <a href="<?=$base;?>/search?q=daily">
+            <img class="rounded-circle" src="<?=$base; ?>/media/style-daily.jpg" width="75" height="75"/>
+            <h5>dia a dia</h5>
+        </a>
     </div>
     <div class="col-3">
-        <img class="rounded-circle" src="<?=$base; ?>/media/style-social.jpg" width="75" height="75"/>
-        <h5>social</h5>
+        <a href="<?=$base;?>/search?q=social">
+            <img class="rounded-circle" src="<?=$base; ?>/media/style-social.jpg" width="75" height="75"/>
+            <h5>social</h5>
+        </a>
     </div>
     <div class="col-3">
-        <img class="rounded-circle" src="<?=$base; ?>/media/style-classy.jpg" width="75" height="75"/>
-        <h5>estilosa</h5>
+        <a href="<?=$base;?>/search?q=classy">
+            <img class="rounded-circle" src="<?=$base; ?>/media/style-classy.jpg" width="75" height="75"/>
+            <h5>estilosa</h5>
+        </a>
     </div>
 </div>
 
