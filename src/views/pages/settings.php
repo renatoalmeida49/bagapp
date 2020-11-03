@@ -18,10 +18,14 @@
         </div>
     </header>
 
-    <?php if($name == 'admin'): ?>
-        <a href="<?=$base;?>/handbags/insert">Adicionar bolsas</a>
-    <?php endif;?>
+    <div class="row">
 
-    <a href="<?=$base;?>/logoff">Sair</a>
+        <?php if($name == 'admin'): ?>
+            <a href="<?=$base;?>/handbags/insert" class="btn-danger">Adicionar bolsas</a>
+        <?php endif;?>
+
+        <a href="<?=$base;?>/logoff" class="btn-danger">Sair</a>
+
+    </div>
 
     <?= $render('footer'); ?>

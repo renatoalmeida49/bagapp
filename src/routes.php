@@ -16,4 +16,6 @@ $router->get('/handbags/insert', 'HandbagController@insert');
 
 $router->get('/handbag/{id}', 'HandbagController@product');
 
+$router->get('/sorry', 'ErroController@sorry');
+
 $router->get('/logoff', 'LoginController@logout');

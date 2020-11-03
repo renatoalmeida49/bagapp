@@ -3,6 +3,10 @@
 <div class="row feed search-feed">
     <div class="col">
 
+        <?php if(empty($bags)): ?>
+            <div class="h1">Desculpe. Não encontramos nenhuma bolsa.</div>
+        <?php endif; ?>
+
         <?php foreach($bags as $bag): ?>
 
             <a href="<?=$base;?>/handbag/<?=$bag->id;?>">

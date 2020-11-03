@@ -3,7 +3,7 @@
         <img src="<?=$base;?>/assets/images/home.png" />
       </a>
 
-      <a href="#">
+      <a href="<?=$base;?>/sorry">
         <img src="<?=$base;?>/assets/images/favorite-list.png" />
       </a>
 

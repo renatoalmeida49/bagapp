@@ -15,7 +15,7 @@
             <input type="search" placeholder="Pesquisar" name="q" />
         </form>
     
-        <a href="#" class="cart">
+        <a href="<?=$base; ?>/sorry" class="cart">
             <img src="<?= $base; ?>/assets/images/cart.png" />
         </a>
     </header>
